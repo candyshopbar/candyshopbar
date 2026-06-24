@@ -1260,7 +1260,8 @@ body::-webkit-scrollbar { display: none; }
 
 .loader-logo {
   width: 150px;
-  height: 150px;
+  height: auto;
+  object-fit: contain;
   margin-bottom: 2rem;
   animation: logoFadeIn 1.2s ease-out forwards, logoPulse 3s ease-in-out infinite 1.2s;
   filter: drop-shadow(0 4px 20px rgba(212, 163, 115, 0.25));
