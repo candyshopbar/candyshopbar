@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candyshopbar | Kaffee & Kuchen in Groß-Gerau</title>
+  <meta name="description" content="Die Candyshopbar in Groß-Gerau – Kaffeespezialitäten, Kuchen und eine gemütliche Atmosphäre. Dienstags: Kaffee & Kuchen für 4,90 €.">
+  <meta name="keywords" content="Candyshopbar, Groß-Gerau, Kaffee, Kuchen, Kiosk, Café, Farrukh Khan">
+  <meta name="author" content="Farrukh Khan">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== DEAL ALERT BAR (top of page) ===== -->
+  <div id="deal-bar">
+    <span class="deal-bar-icon">☕</span>
+    <strong>Dienstags-Special:</strong>&nbsp; Kaffee &amp; Kuchen für nur <span class="deal-bar-price">4,90 €</span>
+    <a href="#order" class="deal-bar-cta">Mehr erfahren →</a>
+  </div>
+
+  <!-- ===== STICKY NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="logo">Candyshopbar</a>
+      <div class="nav-links">
+        <a href="#about">Über uns</a>
+        <a href="#content-section-1">Unser Kaffee</a>
+        <a href="#content-section-2">Atmosphäre</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="tel:+491728221027" class="nav-phone" aria-label="Anrufen">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          Anrufen
+        </a>
+        <a href="#order" class="cta-button">JETZT BESUCHEN</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION (Cinemagraph) ===== -->
+  <header id="hero-section" class="hero-section">
+    <!-- Background photo (animated via CSS) -->
+    <div class="hero-bg cinemagraph-bg" style="background-image: url('images/hero_machine_bg.png')"></div>
+    <div class="hero-overlay"></div>
+    
+    <!-- Cinemagraph Steam Particles -->
+    <div class="hero-steam-container">
+      <div class="hero-steam-particle sp-1"></div>
+      <div class="hero-steam-particle sp-2"></div>
+      <div class="hero-steam-particle sp-3"></div>
+      <div class="hero-steam-particle sp-4"></div>
+    </div>
+
+    <div class="hero-content animate-on-scroll">
+      <!-- USP Badge -->
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Kaffee · Kuchen · Kiosk · Groß-Gerau
+      </div>
+
+      <h1 class="hero-title">DEIN MOMENT<br>DES GENUSSES.</h1>
+      <p class="hero-desc">Röstfrischer Spezialitätenkaffee &amp; leckerer Kuchen an unserem gemütlichen Kiosk – mit kostenlosen Parkplätzen direkt am Haus.</p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-ctas">
+        <a href="#order" class="hero-btn-primary">
+          <span class="btn-bg"></span>
+          <span class="btn-text">DIENSTAGS-DEAL ENTDECKEN</span>
+        </a>
+        <button type="button" class="hero-btn-secondary" onclick="openRouteModal()">
+          📍 Route berechnen
+        </button>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue animate-on-scroll">
+      <span>Entdecken</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </header>
+
+  <!-- ===== OPENING HOURS STRIP ===== -->
+  <div id="hours-strip" class="animate-on-scroll">
+    <div class="hours-container">
+      <div class="hours-item">
+        <span class="hours-label">Täglich geöffnet</span>
+        <span class="hours-time">09:00 – 21:00 Uhr</span>
+      </div>
+      <div class="hours-divider"></div>
+      <div class="hours-item hours-special">
+        <span class="hours-badge">🎉 Dienstag</span>
+        <span class="hours-time">Kaffee &amp; Kuchen 4,90 €</span>
+      </div>
+      <div class="hours-divider"></div>
+      <div class="hours-item">
+        <a href="tel:+491728221027" class="hours-phone">
+          📞 +49 172 8221027
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTENT SECTIONS ===== -->
+  <div id="content-container">
+
+    <!-- Chapter 01 — Freshly Roasted -->
+    <section class="content-section" id="content-section-1" >
+      <div class="section-grid" id="about">
+        <div class="text-col animate-on-scroll">
+          <h3>Röstfrischer Genuss</h3>
+          <p>Jede Bohne wird in <strong>kleinen Chargen</strong> schonend geröstet – direkt aus der Region. Ich serviere ausschließlich Spezialitätenkaffee der Güteklasse A, von der Bohne bis zur Tasse mit Sorgfalt zubereitet.</p>
+          <ul class="feature-list">
+            <li>☕ Über 8 Kaffeespezialitäten auf der Karte</li>
+            <li>🌱 Nachhaltige Röstung aus der Region</li>
+            <li>❤️ Mit Leidenschaft persönlich zubereitet</li>
+          </ul>
+          <div class="decor-line"></div>
+        </div>
+        <div class="image-col animate-on-scroll delay-1" id="img-col-1">
+          <img src="images/modern_coffee_beans.png" alt="Frisch geröstete Kaffeebohnen und Kaffee" class="section-img" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 02 — Atmosphere -->
+    <section class="content-section section-dark" id="content-section-2">
+      <div class="section-grid section-grid-reverse">
+        <div class="image-col animate-on-scroll delay-1">
+          <img src="images/modern_sessel.png" alt="Gemütlicher moderner Sessel in der Candyshopbar" class="section-img" loading="lazy">
+        </div>
+        <div class="text-col text-col-light animate-on-scroll">
+          <h3>Gemütliche Atmosphäre</h3>
+          <p>Unser kleiner, liebevoll gestalteter Kiosk lädt zum Durchatmen, Genießen und Verweilen ein. Ein Ort mit modernem Design, echtem Charme und kostenlosen Parkplätzen direkt am Haus.</p>
+          <ul class="feature-list feature-list-light">
+            <li>🌿 Gemütliches Kiosk-Ambiente</li>
+            <li>🅿️ Kostenlose Parkplätze direkt vor der Tür</li>
+            <li>☀️ Täglich geöffnet 9–21 Uhr</li>
+          </ul>
+          <div class="decor-line"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Chapter 03 — Persönlich geführt -->
+    <section class="content-section section-dark" id="content-section-3">
+      <div class="section-grid">
+        <div class="text-col text-col-light animate-on-scroll">
+          <h3>Persönlich Geführt</h3>
+          <p>Die Candyshopbar wird von <strong>Farrukh Khan</strong> persönlich geführt. Hier bist du kein Gast – du bist Familie. Jede Spezialität wird mit echter Handwerkskunst und einem herzlichen Lächeln zubereitet.</p>
+          <ul class="feature-list feature-list-light">
+            <li>👨‍🍳 Persönlich vom Inhaber betreut</li>
+            <li>🎂 Täglich frischer Kuchen</li>
+            <li>🤝 Familiäre Atmosphäre</li>
+          </ul>
+          <div class="decor-line"></div>
+        </div>
+        <div class="image-col animate-on-scroll delay-1">
+          <img src="images/modern_coffee_cake.png" alt="Kaffee und frischer Kuchen" class="section-img" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="testimonials-container">
+        <h2 class="testimonials-title animate-on-scroll">Was unsere Kunden sagen</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card animate-on-scroll delay-1">
+            <div class="testimonial-quote">❝</div>
+            <p class="testimonial-text">"Der beste Kaffee in Groß-Gerau! Der kleine Kiosk ist wunderschön und der Kuchen einfach göttlich. Wir kommen jedes Wochenende."</p>
+            <span class="testimonial-author">— Sarah M.</span>
+          </div>
+          <div class="testimonial-card animate-on-scroll delay-2">
+            <div class="testimonial-quote">❝</div>
+            <p class="testimonial-text">"Das Dienstags-Angebot ist unschlagbar. Kaffee und Kuchen für 4,90 € – das gibt es sonst nirgendwo. Super freundlich!"</p>
+            <span class="testimonial-author">— Thomas K.</span>
+          </div>
+          <div class="testimonial-card animate-on-scroll delay-3">
+            <div class="testimonial-quote">❝</div>
+            <p class="testimonial-text">"Tolle familiäre Atmosphäre, top Service und der Kaffee schmeckt wirklich außergewöhnlich. Genau das, was Groß-Gerau gebraucht hat!"</p>
+            <span class="testimonial-author">— Jana R.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT FORM ===== -->
+    <section class="contact-section" id="kontakt">
+      <div class="contact-container animate-on-scroll">
+        <h2 class="contact-title">Kontaktformular</h2>
+        <p class="contact-desc">Wünsche, Feedback oder Beschwerden? Schreib uns – wir melden uns schnellstmöglich bei dir.</p>
+
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xblgnwdq" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Dein Name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">E-Mail</label>
+              <input type="email" id="contact-email" name="email" placeholder="deine@email.de" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-subject">Betreff</label>
+            <select id="contact-subject" name="subject" required>
+              <option value="" disabled selected>Bitte auswählen...</option>
+              <option value="Wunsch">Wunsch</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Beschwerde">Beschwerde</option>
+              <option value="Reservierung">Reservierung</option>
+              <option value="Sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Nachricht</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Deine Nachricht..." required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="Neue Nachricht von der Candyshopbar-Website">
+          <input type="hidden" name="_replyto" value="">
+          <button type="submit" class="form-submit-btn" id="contact-submit">
+            <span class="btn-bg"></span>
+            <span class="btn-text">Nachricht senden</span>
+          </button>
+          <div id="form-success" class="form-success" style="display:none;">
+            ✅ Vielen Dank! Deine Nachricht wurde erfolgreich gesendet.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section id="order" class="cta-section">
+      <div class="cta-inner animate-on-scroll">
+        <h2 class="cta-heading">DEIN NÄCHSTER<br>GLÜCKSMOMENT WARTET.</h2>
+
+        <!-- Offer Card -->
+        <div class="offer-card">
+          <div class="offer-card-left">
+            <span class="offer-badge">🎉 Dienstags-Special</span>
+            <p class="offer-title">Kaffee &amp; Kuchen für nur <span class="price-highlight">4,90 €</span></p>
+            <p class="offer-desc">Jeden Dienstag – ein Stück frischer Kuchen + Kaffee deiner Wahl zum Vorteilspreis. Kein Code nötig.</p>
+          </div>
+          <div class="offer-card-divider"></div>
+          <div class="offer-card-right">
+            <div class="offer-hours">
+              <p><strong>Öffnungszeiten</strong></p>
+              <p>Täglich: 09:00 – 21:00 Uhr</p>
+            </div>
+            <address class="store-address">
+              <strong>Candyshopbar</strong><br>
+              Münchener Str. 2<br>
+              64521 Groß-Gerau
+            </address>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="cta-buttons">
+          <a href="https://wa.me/491728221027?text=Hallo%20Candyshopbar%2C%20ich%20möchte%20gerne%20anfragen." target="_blank" rel="noopener" class="order-btn order-btn-whatsapp">
+            <span class="btn-bg"></span>
+            <span class="btn-text">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp schreiben
+            </span>
+          </a>
+          <button type="button" class="order-btn order-btn-maps" onclick="openRouteModal()">
+            <span class="btn-bg"></span>
+            <span class="btn-text">📍 Route berechnen</span>
+          </button>
+        </div>
+
+        <p class="owner-presenter">Persönlich geführt von Inhaber: <strong>Farrukh Khan</strong></p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand animate-on-scroll">
+        <span class="footer-logo">Candyshopbar</span>
+        <p class="footer-tagline">Kaffee · Kuchen · Groß-Gerau</p>
+      </div>
+      <div class="footer-info">
+        <div class="footer-col animate-on-scroll delay-1">
+          <h4>Kontakt</h4>
+          <p><a href="tel:+491728221027">+49 172 8221027</a></p>
+          <p><a href="https://wa.me/491728221027" target="_blank" rel="noopener">WhatsApp</a></p>
+          <p><a href="mailto:farrukhkhan1008@gmail.com">farrukhkhan1008@gmail.com</a></p>
+        </div>
+        <div class="footer-col animate-on-scroll delay-2">
+          <h4>Adresse</h4>
+          <p>Münchener Str. 2<br>64521 Groß-Gerau</p>
+        </div>
+        <div class="footer-col animate-on-scroll delay-3">
+          <h4>Öffnungszeiten</h4>
+          <p>Täglich: 09:00 – 21:00 Uhr</p>
+        </div>
+      </div>
+      <div class="footer-bottom animate-on-scroll">
+        <div class="footer-legal">
+          <a href="impressum.html">Impressum</a>
+          <span class="footer-dot">·</span>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+        <p class="footer-copy">© 2026 Candyshopbar · Farrukh Khan · Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== ROUTE SELECTION MODAL ===== -->
+  <div id="route-modal" class="route-modal" style="display:none;">
+    <div class="route-modal-backdrop" onclick="closeRouteModal()"></div>
+    <div class="route-modal-content">
+      <button class="route-modal-close" onclick="closeRouteModal()" aria-label="Schließen">&times;</button>
+      <h3 class="route-modal-title">Route berechnen</h3>
+      <p class="route-modal-desc">Wähle deine bevorzugte Karten-App:</p>
+      <div class="route-modal-options">
+        <a href="https://maps.apple.com/?address=Münchener+Str.+2,64521+Groß-Gerau&ll=49.9215,8.4826" target="_blank" rel="noopener" class="route-option route-option-apple" onclick="closeRouteModal()">
+          <span class="route-option-icon">🍎</span>
+          <span class="route-option-label">Apple Karten</span>
+        </a>
+        <a href="https://maps.google.com/?q=Münchener+Str.+2,+64521+Groß-Gerau" target="_blank" rel="noopener" class="route-option route-option-google" onclick="closeRouteModal()">
+          <span class="route-option-icon">🗺️</span>
+          <span class="route-option-label">Google Maps</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== STICKY BOTTOM HOURS BAR (mobile) ===== -->
+  <div id="sticky-hours-mobile">
+    <a href="tel:+491728221027" class="sticky-phone">📞 Anrufen</a>
+    <div class="sticky-divider"></div>
+    <a href="https://wa.me/491728221027" target="_blank" class="sticky-whatsapp">💬 WhatsApp</a>
+    <div class="sticky-divider"></div>
+    <button type="button" class="sticky-maps" onclick="openRouteModal()">📍 Route</button>
+  </div>
+
+  <!-- ===== LOADING SCREEN — Coffee Machine Animation ===== -->
+  <div id="loading-screen">
+    <div class="machine-scene">
+      <!-- Espresso machine body -->
+      <div class="espresso-machine">
+        <div class="machine-top"></div>
+        <div class="machine-body">
+          <div class="machine-gauge"></div>
+          <div class="machine-portafilter"></div>
+        </div>
+        <div class="machine-drip-tray"></div>
+      </div>
+      <!-- Coffee stream -->
+      <div class="machine-stream"></div>
+      <!-- Cup below machine -->
+      <div class="machine-cup">
+        <div class="machine-cup-body">
+          <div class="machine-cup-liquid"></div>
+        </div>
+        <div class="machine-cup-handle"></div>
+      </div>
+    </div>
+    <div class="coffee-fill"></div>
+    <div class="loader-content">
+      <p class="loader-title">Candyshopbar</p>
+      <p class="loader-sub-title">Dein Kaffee wird zubereitet...</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
