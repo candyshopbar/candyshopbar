@@ -1258,6 +1258,38 @@ body::-webkit-scrollbar { display: none; }
   overflow: hidden;
 }
 
+.loader-logo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 2rem;
+  animation: logoFadeIn 1.2s ease-out forwards, logoPulse 3s ease-in-out infinite 1.2s;
+  filter: drop-shadow(0 4px 20px rgba(212, 163, 115, 0.25));
+  z-index: 20;
+}
+
+@keyframes logoFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 4px 20px rgba(212, 163, 115, 0.25));
+  }
+  50% {
+    transform: scale(1.03);
+    filter: drop-shadow(0 8px 30px rgba(212, 163, 115, 0.45));
+  }
+}
+
+
 .machine-scene {
   position: relative;
   z-index: 20;
